@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ONERI — Магазин одежды</title>
   <link rel="stylesheet" href="../static/css/style.css">
   <link rel="icon" href="assets/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="site-background-logo"></div>
   <header class="site-header">
     <div class="logo-block">
       <img src="../assets/logo.webp" alt="ONERI logo" class="logo">
@@ -19,91 +19,103 @@
       <a href="#">Каталог</a>
       <a href="#">О нас</a>
       <a href="#">Контакты</a>
-      <button class="cart-btn">Корзина</button>
     </nav>
+    <div class="header-actions">
+      <input type="text" placeholder="Поиск..." class="search-input">
+      <button class="icon-btn">❤</button>
+      <button class="icon-btn">👤</button>
+      <button class="cart-button">Корзина</button>
+    </div>
   </header>
+
   <main>
     <section class="hero">
+      <div class="hero-logo-background"></div>
       <div class="hero-text">
         <h2>Актуальные товары ONERI</h2>
         <p>Стильная одежда для тех, кто ценит качество и минимализм.</p>
-        <a href="#" class="btn-main">Смотреть коллекцию</a>
+        <a href="#" class="button-main">Смотреть коллекцию</a>
       </div>
       <div class="hero-img">
         <img src="../assets/logo.webp" alt="Hero image">
       </div>
-      <div class="hero-logo-bg"></div>
     </section>
+
     <section class="catalog">
+      <div class="catalog-background-logo"></div>
       <h2>Популярные товары</h2>
       <div class="catalog-grid">
         <div class="product-card">
-          <div class="product-img"></div>
+          <div class="product-image">
+            <img src="../assets/tshirt.webp" alt="Футболка ne-net">
+          </div>
           <h3>Футболка ne-net (NYA)</h3>
-          <p> от 3250</p>
-          <button class="btn-main"> узнать больше </button>
+          <p>от 3250</p>
+          <button class="button-main">Узнать больше</button>
         </div>
         <div class="product-card">
-          <div class="product-img"></div>
-          <h3>Зип-худи ne-net (NYA) </h3>
-          <p> от 6250</p>
-          <button class="btn-main"> узнать больше </button>
+          <div class="product-image">
+            <img src="../assets/hoodie.webp" alt="Зип-худи ne-net">
+          </div>
+          <h3>Зип-худи ne-net (NYA)</h3>
+          <p>от 6250</p>
+          <button class="button-main">Узнать больше</button>
         </div>
         <div class="product-card">
-          <div class="product-img"></div>
-          <h3>брелок ne-net (NYA)</h3>
-          <p> от 850</p>
-          <button class="btn-main"> узнать больше </button>
+          <div class="product-image">
+            <img src="../assets/access.webp" alt="Брелок ne-net">
+          </div>
+          <h3>Брелок ne-net (NYA)</h3>
+          <p>от 850</p>
+          <button class="button-main">Узнать больше</button>
         </div>
       </div>
-  </section>
-    <section class="catalog-slider">
-  <h2>Новая коллекция</h2>
-  <div class="slider-container">
-    <button class="slider-btn prev">&#10094;</button>
-    <div class="slider-track">
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Кроссовки ONERI</h3>
-        <p>от 7200</p>
-        <button class="btn-main">узнать больше</button>
-      </div>
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Платье Minimal</h3>
-        <p>от 4800</p>
-        <button class="btn-main">узнать больше</button>
-      </div>
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Рюкзак Urban</h3>
-        <p>от 3500</p>
-        <button class="btn-main">узнать больше</button>
-      </div>
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Толстовка Classic</h3>
-        <p>от 4200</p>
-        <button class="btn-main">узнать больше</button>
-      </div>
-        <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Рюкзак Urban</h3>
-        <p>от 3500</p>
-        <button class="btn-main">узнать больше</button>
-      </div>
-        <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Рюкзак Urban</h3>
-        <p>от 3500</p>
-        <button class="btn-main">узнать больше</button>
-      </div>
+    </section>
 
-    </div>
-    <button class="slider-btn next">&#10095;</button>
-  </div>
-</section>
+    <section class="catalog-slider">
+      <div class="catalog-slider-background-logo"></div>
+      <h2>Новая коллекция</h2>
+      <div class="slider-container">
+        <button class="slider-button slider-button-prev">&#10094;</button>
+        <div class="slider-track">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/sneakers.webp" alt="Кроссовки NIKE">
+            </div>
+            <h3>Кроссовки NIKE</h3>
+            <p>от 7200</p>
+            <button class="button-main">Узнать больше</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/tshirt1c.webp" alt="Футболка мерч 1C">
+            </div>
+            <h3>Футболка мерч 1C</h3>
+            <p>от 4800</p>
+            <button class="button-main">Узнать больше</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/backpack.webp" alt="Рюкзак ne-net">
+            </div>
+            <h3>Рюкзак ne-net</h3>
+            <p>от 3500</p>
+            <button class="button-main">Узнать больше</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/bag.webp" alt="Сумка ne-net">
+            </div>
+            <h3>Сумка ne-net</h3>
+            <p>от 4200</p>
+            <button class="button-main">Узнать больше</button>
+          </div>
+        </div>
+        <button class="slider-button slider-button-next">&#10095;</button>
+      </div>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-about">
@@ -119,11 +131,12 @@
       <div class="footer-contact">
         <h3>Контакты</h3>
         <p>Email: info@oneri.ru</p>
-        <p>Тел: +7 (900) 99 00 ** </p>
+        <p>Тел: +7 (900) 99 00 **</p>
       </div>
     </div>
     <p class="footer-copy">© 2025 ONERI. Все права защищены.</p>
   </footer>
-<script src="static/js/script.js"></script>
+
+  <script src="static/js/script.js"></script>
 </body>
 </html>
