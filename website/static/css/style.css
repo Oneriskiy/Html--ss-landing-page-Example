@@ -14,3 +14,82 @@ body {
 }
 
 a { text-decoration: none; color: inherit; }
+
+
+.site-header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gray);
+  letter-spacing: 1.5px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-nav a {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--gray);
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.header-nav a:hover {
+  color: var(--accent);
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+.cart-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--gray);
+  background: transparent;
+  color: var(--gray);
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+  background: var(--gray);
+  color: #fff;
+}
