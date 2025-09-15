@@ -1,0 +1,16 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gray: #3B3A36;
+  --accent: #a67c52;
+  --light: #f9f9f9;
+}
+
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--gray);
+  background: var(--light);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
