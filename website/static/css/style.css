@@ -13,27 +13,52 @@
 
 body {
   font-family: 'Poppins', system-ui, sans-serif;
-  color: var(--gray-color);
-  background-color: var(--background-color);
+  color: #3B3A36;
+  background-color: #f7f5f1;
   line-height: 1.6;
-  position: relative;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 1200px;
+  background-image: url('../assets/logo.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.08;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+main, header, footer, section {
+  position: relative;
+  z-index: 1;
 }
 
 .site-background-logo {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
   background-image: url('../assets/logo.webp');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
+  background-position: center center;
+  background-size: contain;
   opacity: 0.08;
   pointer-events: none;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
+
 
 a {
   text-decoration: none;
@@ -393,10 +418,9 @@ a {
 }
 
 .site-footer {
-  background-color: var(--gray-color);
+  background: linear-gradient(180deg, var(--gray-color), #2e2d29);
   color: #ffffff;
-  padding: 40px 0 20px;
-  font-size: 14px;
+  padding: 60px 0 30px;
   position: relative;
   z-index: 2;
 }
@@ -405,31 +429,45 @@ a {
   width: 98%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-container h3 {
-  margin-bottom: 15px;
+  font-size: 18px;
   font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
 }
 
+.footer-container p,
 .footer-container a {
-  display: block;
-  color: #ffffff;
-  margin-bottom: 8px;
-  transition: color 0.3s ease;
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-container ul {
+  list-style: none;
 }
 
 .footer-container a:hover {
   color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.footer-contact a {
+  display: inline;
 }
 
 .footer-copy {
   text-align: center;
   margin-top: 30px;
-  font-size: 13px;
-  opacity: 0.8;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
 }
